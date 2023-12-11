@@ -23,7 +23,7 @@ class TournamentsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val tournamentsViewModel =
-            ViewModelProvider(this).get(TournamentsViewModel::class.java)
+            ViewModelProvider(this)[TournamentsViewModel::class.java]
 
         _binding = FragmentTournamentsBinding.inflate(inflater, container, false)
         val root: View = binding.root

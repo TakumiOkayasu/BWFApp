@@ -23,14 +23,14 @@ class RankingFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val rankingViewModel =
-            ViewModelProvider(this).get(RankingViewModel::class.java)
+            ViewModelProvider(this)[RankingViewModel::class.java]
 
         _binding = FragmentRankingBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val rankingView: RecyclerView = binding.rvRanking
         rankingViewModel.text.observe(viewLifecycleOwner) {
-            it
+            rankingView
         }
         return root
     }
