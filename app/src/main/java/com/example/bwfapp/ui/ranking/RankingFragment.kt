@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.RecyclerView
 import com.example.bwfapp.databinding.FragmentRankingBinding
 
 class RankingFragment : Fragment() {
@@ -28,10 +27,6 @@ class RankingFragment : Fragment() {
         _binding = FragmentRankingBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val rankingView: RecyclerView = binding.rvRanking
-        rankingViewModel.text.observe(viewLifecycleOwner) {
-            rankingView
-        }
         return root
     }
 

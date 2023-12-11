@@ -6,13 +6,13 @@
     app:startDestination="@+id/navigation_ranking">
 
     <fragment
-        android:id="@+id/navigation_search"
+        android:id="@+id/navigation_ranking"
         android:name="com.example.bwfapp.ui.ranking.RankingFragment"
         android:label="@string/title_ranking"
         tools:layout="@layout/fragment_ranking" />
 
     <fragment
-        android:id="@+id/navigation_ranking"
+        android:id="@+id/navigation_search"
         android:name="com.example.bwfapp.ui.search.SearchFragment"
         android:label="@string/title_search"
         tools:layout="@layout/fragment_search" />
